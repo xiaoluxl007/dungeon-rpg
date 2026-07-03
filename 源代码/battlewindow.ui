@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BattleWindow</class>
+ <widget class="QWidget" name="BattleWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>战斗</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <widget class="QLabel" name="turnLabel">
+    <property name="text">
+     <string>你的回合</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <widget class="QWidget" name="playerPanel">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <widget class="QLabel" name="playerNameLabel">
+       <property name="text">
+        <string>玩家</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="playerHpBar">
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="playerHpLabel">
+       <property name="text">
+        <string>100/100</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="playerAttackLabel">
+       <property name="text">
+        <string>攻击: 10</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="playerDefenseLabel">
+       <property name="text">
+        <string>防御: 5</string>
+       </property>
+      </widget>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="vsLabel">
+     <property name="text">
+      <string>&lt;h1&gt;VS&lt;/h1&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="enemyPanel">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <widget class="QLabel" name="enemyNameLabel">
+       <property name="text">
+        <string>敌人</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="enemyHpBar">
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="enemyHpLabel">
+       <property name="text">
+        <string>100/100</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="enemyAttackLabel">
+       <property name="text">
+        <string>攻击: 10</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="enemyDefenseLabel">
+       <property name="text">
+        <string>防御: 5</string>
+       </property>
+      </widget>
+     </layout>
+    </widget>
+   </layout>
+   <widget class="QTextEdit" name="battleLogText">
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <widget class="QPushButton" name="attackButton">
+     <property name="text">
+      <string>攻击</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="skillButton">
+     <property name="text">
+      <string>技能</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="itemButton">
+     <property name="text">
+      <string>道具</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="escapeButton">
+     <property name="text">
+      <string>逃跑</string>
+     </property>
+    </widget>
+   </layout>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>暗狱回廊：逐暗旅人</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <widget class="QWidget" name="mainMenuWidget">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="text">
+         <string>&lt;h1&gt;暗狱回廊：逐暗旅人&lt;/h1&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="startGameButton">
+        <property name="text">
+         <string>开始游戏</string>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loadGameButton">
+        <property name="text">
+         <string>读取存档</string>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="gameHelpButton">
+        <property name="text">
+         <string>游戏说明</string>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exitButton">
+        <property name="text">
+         <string>退出游戏</string>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gameScreenWidget">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <widget class="QWidget" name="leftPanel">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <widget class="QLabel" name="playerNameLabel">
+         <property name="text">
+          <string>角色名称</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="levelLabel">
+         <property name="text">
+          <string>等级: 1</string>
+         </property>
+        </widget>
+        <widget class="QProgressBar" name="hpBar">
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="hpLabel">
+         <property name="text">
+          <string>100/100</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="attackLabel">
+         <property name="text">
+          <string>攻击: 10</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="defenseLabel">
+         <property name="text">
+          <string>防御: 5</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="goldLabel">
+         <property name="text">
+          <string>金币: 0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="expLabel">
+         <property name="text">
+          <string>经验: 0</string>
+         </property>
+        </widget>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </spacer>
+        <widget class="QPushButton" name="backToMenuButton">
+         <property name="text">
+          <string>返回主菜单</string>
+         </property>
+        </widget>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="centerPanel">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <widget class="QLabel" name="floorLabel">
+         <property name="text">
+          <string>第 1 层 / 共 5 层</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="mapText">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+         <widget class="QPushButton" name="moveUpButton">
+          <property name="text">
+           <string>↑</string>
+          </property>
+         </widget>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </layout>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <widget class="QPushButton" name="moveLeftButton">
+          <property name="text">
+           <string>←</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="enterButton">
+          <property name="text">
+           <string>进入</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="moveRightButton">
+          <property name="text">
+           <string>→</string>
+          </property>
+         </widget>
+        </layout>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+         <widget class="QPushButton" name="moveDownButton">
+          <property name="text">
+           <string>↓</string>
+          </property>
+         </spacer>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </spacer>
+        </layout>
+        <widget class="QPushButton" name="nextFloorButton">
+         <property name="text">
+          <string>进入下一层</string>
+         </property>
+        </widget>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="rightPanel">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <widget class="QLabel" name="logLabel">
+         <property name="text">
+          <string>日志</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="logText">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </layout>
+      </widget>
+     </layout>
+    </widget>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>Qt::TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
